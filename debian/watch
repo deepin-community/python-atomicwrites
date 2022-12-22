@@ -1,0 +1,3 @@
+version=3
+opts=filenamemangle=s/.+\/v?(\d\S*)\.tar\.gz/python-atomicwrites-$1\.tar\.gz/ \
+  https://github.com/untitaker/python-atomicwrites/tags .*/v?(\d\S*)\.tar\.gz

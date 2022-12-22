@@ -1,0 +1,28 @@
+Source: python-atomicwrites
+Maintainer: Debian Python Team <team+python@tracker.debian.org>
+Uploaders: Filip Pytloun <filip@pytloun.cz>
+Section: python
+Priority: optional
+Build-Depends: debhelper-compat (= 13),
+               dh-python (>= 2.20160609~),
+               python3-all,
+               python3-pytest,
+               python3-setuptools,
+Standards-Version: 4.5.1
+Testsuite: autopkgtest-pkg-python
+Homepage: https://github.com/untitaker/python-atomicwrites
+Vcs-Browser: https://salsa.debian.org/python-team/packages/python-atomicwrites
+Vcs-Git: https://salsa.debian.org/python-team/packages/python-atomicwrites.git
+Rules-Requires-Root: no
+
+Package: python3-atomicwrites
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}
+Description: Atomic file writes - Python 3.x
+ It uses a temporary file in the same directory as the given path. This ensures
+ that the temporary file resides on the same filesystem.
+ The temporary file will then be atomically moved to the target location: On
+ POSIX, it will use rename if files should be overwritten, otherwise a
+ combination of link and unlink.
+ .
+ This package contains the Python 3.x module.

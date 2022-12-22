@@ -1,0 +1,26 @@
+From 9217fbc8a0739edf49c25118c14517f63c2c4e66 Mon Sep 17 00:00:00 2001
+From: Filip Pytloun <filip@pytloun.cz>
+Date: Tue, 9 Aug 2016 13:03:50 +0200
+Subject: Fix privacy-breach by removing embedded image
+
+---
+ README.rst | 6 ------
+ 1 file changed, 6 deletions(-)
+
+diff --git a/README.rst b/README.rst
+index 3a5658c..ad25dcc 100644
+--- a/README.rst
++++ b/README.rst
+@@ -2,12 +2,6 @@
+ python-atomicwrites
+ ===================
+ 
+-.. image:: https://travis-ci.org/untitaker/python-atomicwrites.svg?branch=master
+-    :target: https://travis-ci.org/untitaker/python-atomicwrites
+-
+-.. image:: https://ci.appveyor.com/api/projects/status/vadc4le3c27to59x/branch/master?svg=true
+-   :target: https://ci.appveyor.com/project/untitaker/python-atomicwrites/branch/master
+-
+ Atomic file writes.
+ 
+ .. code-block:: python

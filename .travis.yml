@@ -1,0 +1,28 @@
+sudo: false
+os: linux
+language: python
+
+python:
+    - 2.7
+    - pypy
+    - 3.4
+    - 3.5
+    - 3.6
+    - 3.7
+
+env:
+    - TOXENV=test
+
+matrix:
+    include:
+        - python: 2.7
+          env: TOXENV=stylecheck
+        - python: 3.6
+          env: TOXENV=stylecheck
+
+
+install:
+    - pip install tox
+
+script:
+    - tox

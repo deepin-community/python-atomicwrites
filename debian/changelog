@@ -1,0 +1,85 @@
+python-atomicwrites (1.4.0-2) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Ondřej Nový ]
+  * d/control: Update Maintainer field with new Debian Python Team
+    contact address.
+  * d/changelog: Remove trailing whitespaces.
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Boyuan Yang ]
+  * Bump Standards-Version to 4.5.1.
+
+ -- Boyuan Yang <byang@debian.org>  Sat, 06 Feb 2021 23:45:49 -0500
+
+python-atomicwrites (1.4.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * debian/rules: Use execute_after syntax.
+
+ -- Boyuan Yang <byang@debian.org>  Tue, 14 Jul 2020 09:48:52 -0400
+
+python-atomicwrites (1.3.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * Drop PyPy support.
+  * Set Rules-Requires-Root: no.
+  * Bump debhelper compat level to 13.
+
+ -- Ondřej Nový <onovy@debian.org>  Fri, 05 Jun 2020 12:28:25 +0200
+
+python-atomicwrites (1.3.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release 1.3.0. (Closes: #928323)
+  * debian/control: Bump Standards-Version to 4.5.0.
+
+ -- Boyuan Yang <byang@debian.org>  Fri, 24 Apr 2020 17:15:49 -0400
+
+python-atomicwrites (1.1.5-4) unstable; urgency=medium
+
+  * Drop python2 support; Closes: #937586
+
+ -- Sandro Tosi <morph@debian.org>  Tue, 14 Apr 2020 10:01:02 -0400
+
+python-atomicwrites (1.1.5-3) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Convert git repository from git-dpm to gbp layout
+  * Use debhelper-compat instead of debian/compat.
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 11 to 12.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+  [ Sandro Tosi ]
+  * Dont run unittests for python2 binary, to reduce pytest rdeps
+
+ -- Sandro Tosi <morph@debian.org>  Mon, 13 Apr 2020 18:58:07 -0400
+
+python-atomicwrites (1.1.5-2) unstable; urgency=medium
+
+  * Team upload.
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/copyright: Use https protocol in Format field
+  * Add pypy version of package
+  * Bump debhelper compat level to 11
+  * Standards-Version is 4.1.4 now (no changes)
+
+ -- Ondřej Nový <onovy@debian.org>  Mon, 18 Jun 2018 10:30:12 +0200
+
+python-atomicwrites (1.1.5-1) unstable; urgency=medium
+
+  * New upstream version
+
+ -- Filip Pytloun <filip@pytloun.cz>  Mon, 22 Aug 2016 19:13:27 +0200
+
+python-atomicwrites (1.1.0-1) unstable; urgency=low
+
+  * initial release (Closes: #833845)
+
+ -- Filip Pytloun <filip@pytloun.cz>  Tue, 09 Aug 2016 11:43:50 +0200
